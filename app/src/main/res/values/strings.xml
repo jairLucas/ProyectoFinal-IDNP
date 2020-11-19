@@ -3,4 +3,19 @@
     <string name="login_editText_usuario">usuario: </string>
     <string name="login_editText_password">contraseña: </string>
     <string name="login_btn_ingresar">INGRESAR</string>
+
+    <!-- Titulos. -->
+    <string name="title_comienzo">Comienzo</string>
+
+
+    <!-- Comienzo -->
+    <string name="comienzo_view_completados">Entrenamientos Completados</string>
+    <string name="comienzo_view_tiempo_total">Tiempo total</string>
+    <string name="comienzo_view_kilometros">kilometros recorridos</string>
+    <string name="comienzo_view_historial">Historial</string>
+    <string name="comienzo_button_iniciar_entrenamiento">Iniciar Entrenamiento</string>
+    <string name="comienzo_ranking_actual">Ranking Actual</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
