@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ComienzoActivity">
+    tools:context=".View.ComienzoView.ComienzoActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -22,7 +22,7 @@
 
     <FrameLayout
         android:id="@+id/contenedor_fragment_comienzo_datos"
-        android:layout_width="388dp"
+        android:layout_width="match_parent"
         android:layout_height="222dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
@@ -44,4 +44,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contenedor_fragment_comienzo_datos" />
+
+    <FrameLayout
+        android:id="@+id/contenedor_fragment_comienzo_historial"
+        android:layout_width="414dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button">
+
+    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,7 +15,9 @@
     <string name="comienzo_view_historial">Historial</string>
     <string name="comienzo_button_iniciar_entrenamiento">Iniciar Entrenamiento</string>
     <string name="comienzo_ranking_actual">Ranking Actual</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Historial -->
+
+
 
 </resources>

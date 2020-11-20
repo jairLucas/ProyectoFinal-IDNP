@@ -1,7 +1,7 @@
-package com.jk.proyectofinal_idnp.Presenter;
+package com.jk.proyectofinal_idnp.Presenter.LoginPresenter;
 
-import com.jk.proyectofinal_idnp.Model.LoginInteractor;
-import com.jk.proyectofinal_idnp.View.LoginView;
+import com.jk.proyectofinal_idnp.Model.LoginModel.LoginInteractor;
+import com.jk.proyectofinal_idnp.View.LoginView.LoginView;
 
 public class LoginPresenterImpl implements LoginPresenter, LoginInteractor.OnLoginFinishedListener {
     private LoginView loginView;

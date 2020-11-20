@@ -1,6 +1,4 @@
-package com.jk.proyectofinal_idnp;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.jk.proyectofinal_idnp.View.LoginView;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -9,10 +7,10 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.jk.proyectofinal_idnp.Model.LoginInteractorImpl;
-import com.jk.proyectofinal_idnp.Presenter.LoginPresenter;
-import com.jk.proyectofinal_idnp.Presenter.LoginPresenterImpl;
-import com.jk.proyectofinal_idnp.View.LoginView;
+import com.jk.proyectofinal_idnp.Model.LoginModel.LoginInteractorImpl;
+import com.jk.proyectofinal_idnp.Presenter.LoginPresenter.LoginPresenter;
+import com.jk.proyectofinal_idnp.Presenter.LoginPresenter.LoginPresenterImpl;
+import com.jk.proyectofinal_idnp.R;
 
 public class LoginActivity extends Activity implements LoginView, View.OnClickListener {
     private ProgressBar progressBar;

@@ -1,4 +1,4 @@
-package com.jk.proyectofinal_idnp.Model;
+package com.jk.proyectofinal_idnp.Model.LoginModel;
 
 import android.text.TextUtils;
 

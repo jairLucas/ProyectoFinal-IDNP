@@ -1,4 +1,4 @@
-package com.jk.proyectofinal_idnp.Fragments;
+package com.jk.proyectofinal_idnp.View.ComienzoView.Fragments;
 
 import android.os.Bundle;
 
@@ -12,10 +12,10 @@ import com.jk.proyectofinal_idnp.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link ComienzoHistorialFragment#newInstance} factory method to
+ * Use the {@link ComienzoDatosFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ComienzoHistorialFragment extends Fragment {
+public class ComienzoDatosFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +26,7 @@ public class ComienzoHistorialFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public ComienzoHistorialFragment() {
+    public ComienzoDatosFragment() {
         // Required empty public constructor
     }
 
@@ -36,15 +36,16 @@ public class ComienzoHistorialFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ComienzoHistorialFragment.
+     * @return A new instance of fragment ComienzoDatosFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ComienzoHistorialFragment newInstance(String param1, String param2) {
-        ComienzoHistorialFragment fragment = new ComienzoHistorialFragment();
+    public static ComienzoDatosFragment newInstance(String param1, String param2) {
+        ComienzoDatosFragment fragment = new ComienzoDatosFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
+
         return fragment;
     }
 
@@ -55,12 +56,13 @@ public class ComienzoHistorialFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_comienzo_historial, container, false);
+        return inflater.inflate(R.layout.fragment_comienzo_datos, container, false);
     }
 }
