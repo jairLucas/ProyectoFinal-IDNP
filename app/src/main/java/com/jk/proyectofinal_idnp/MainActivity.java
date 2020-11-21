@@ -1,14 +1,18 @@
 package com.jk.proyectofinal_idnp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.concurrent.TimeUnit;
 
@@ -21,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     MediaPlayer mediaPlayer;
     Handler handler = new Handler();
     Runnable runnable;
-
+    BottomNavigationView bottomNavigationView;
 
 
 
@@ -39,6 +43,28 @@ public class MainActivity extends AppCompatActivity {
         btnPlay=findViewById(R.id.btn_play);
         btnPause=findViewById(R.id.btn_pause);
 
+
+        bottomNavigationView=(BottomNavigationView) findViewById(R.id.bottomNavigationView);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                if(item.getItemId()==R.id.comienzo){
+                    return true;
+
+                }
+                if(item.getItemId()==R.id.trayectoria){
+                    return true;
+                }
+                if(item.getItemId()==R.id.musica){
+                    return true;
+                }
+                if(item.getItemId()==R.id.mas){
+                    return true;
+                }
+                return false;
+            }
+        });
+
         //inicializando mediaplayer
         mediaPlayer = MediaPlayer.create(this,R.raw.music);
         //inicializando runnable
@@ -51,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
                 handler.postDelayed(this, 500);
 
             }
+
         };
         //get duration of mediaplayer
         int duration = mediaPlayer.getDuration();

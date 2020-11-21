@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/comienzo"
+        android:title="Comienzo"
+        android:icon="@drawable/ic_inicio"/>
+    <item
+        android:id="@+id/trayectoria"
+        android:title="Trayectorias"
+        android:icon="@drawable/ic_trayectoria"/>
+    <item
+        android:id="@+id/musica"
+        android:title="Musica"
+        android:icon="@drawable/ic_musica"/>
+    <item
+        android:id="@+id/mas"
+        android:title="Mas opciones"
+        android:icon="@drawable/ic_mas"/>
+</menu>

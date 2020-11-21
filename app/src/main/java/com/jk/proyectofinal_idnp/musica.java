@@ -1,4 +1,4 @@
-package com.jk.proyectofinal_idnp.View;
+package com.jk.proyectofinal_idnp;
 
 import android.os.Bundle;
 
@@ -8,14 +8,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.jk.proyectofinal_idnp.R;
-
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link MusicFragment#newInstance} factory method to
+ * Use the {@link musica#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class MusicFragment extends Fragment {
+public class musica extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +24,7 @@ public class MusicFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public MusicFragment() {
+    public musica() {
         // Required empty public constructor
     }
 
@@ -36,11 +34,11 @@ public class MusicFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment MusicFragment.
+     * @return A new instance of fragment musica.
      */
     // TODO: Rename and change types and number of parameters
-    public static MusicFragment newInstance(String param1, String param2) {
-        MusicFragment fragment = new MusicFragment();
+    public static musica newInstance(String param1, String param2) {
+        musica fragment = new musica();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -55,7 +53,6 @@ public class MusicFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-
     }
 
     @Override
@@ -64,8 +61,4 @@ public class MusicFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_musica, container, false);
     }
-
-
-
-
 }

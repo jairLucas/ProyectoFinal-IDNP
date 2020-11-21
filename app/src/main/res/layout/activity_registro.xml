@@ -5,17 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/rosa"
-    tools:context=".View.LoginView.LoginActivity">
+    >
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
+        android:text="Registro"
         android:textColor="@color/white"
         android:textSize="36sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf ="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -26,13 +26,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/inputbg"
         android:drawableLeft="@android:drawable/sym_action_email"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Correo"
+        android:hint="usuario"
         android:inputType="textPersonName"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
@@ -54,7 +54,7 @@
         android:drawableLeft="@android:drawable/sym_action_email"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Contraseña"
+        android:hint="correo"
         android:inputType="textPersonName"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
@@ -65,88 +65,68 @@
         app:layout_constraintStart_toStartOf="@+id/inputUsername"
         app:layout_constraintTop_toBottomOf="@+id/inputUsername" />
 
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/inputbg"
+        android:drawableLeft="@android:drawable/ic_menu_preferences"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="********"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/inputEmail"
+        app:layout_constraintStart_toStartOf="@+id/inputEmail"
+        app:layout_constraintTop_toBottomOf="@+id/inputEmail" />
+
+    <EditText
+        android:id="@+id/conformePassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/inputbg"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="*******"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/inputPassword"
+        app:layout_constraintStart_toStartOf="@+id/inputPassword"
+        app:layout_constraintTop_toBottomOf="@+id/inputPassword" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btnbg"
+        android:text="Registro"
+        android:textColor="@color/colorBackground"
+        app:layout_constraintEnd_toEndOf="@+id/conformePassword"
+        app:layout_constraintStart_toStartOf="@+id/conformePassword"
+        app:layout_constraintTop_toBottomOf="@+id/conformePassword" />
+
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/have"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="olvido su contraseña?"
+        android:hint="acepta los terminos y condiciones"
+        android:shadowColor="@color/white"
+        android:text="Guardar Cuenta"
         android:textColor="@color/white"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/inputEmail"
-        app:layout_constraintTop_toBottomOf="@+id/inputEmail" />
-
-    <Button
-        android:id="@+id/button_login"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/btnbg"
-        android:text="Login"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/inputEmail"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/inputEmail"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Dont have an Accoiunt"
-            android:textColor="@color/white" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Dont have an Accoiunt"
-            android:textColor="@color/purple_500" />
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/btnGmail"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/inputbg"
-        android:drawableLeft="@drawable/google"
-        android:text="Gmail"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toStartOf="@+id/btnFacebook"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
-    <Button
-        android:id="@+id/btnFacebook"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/btnbg"
-        android:drawableLeft="@drawable/facebook_box"
-        android:text="Facebook"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/btnGmail"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnGmail"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
+        app:layout_constraintEnd_toEndOf="@+id/btnRegister"
+        app:layout_constraintStart_toStartOf="@+id/btnRegister"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

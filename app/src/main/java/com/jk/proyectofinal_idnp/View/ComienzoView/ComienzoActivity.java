@@ -17,11 +17,12 @@ public class ComienzoActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_comienzo);
+        setContentView(R.layout.activity_main);
         //inicializar y sincronizar fragments
         Fdatos = new ComienzoDatosFragment();
         getSupportFragmentManager().beginTransaction().add(R.id.contenedor_fragment_comienzo_datos,Fdatos).commit();
         Fhistorial = new ComienzoHistorialFragment();
         getSupportFragmentManager().beginTransaction().add(R.id.contenedor_fragment_comienzo_historial,Fhistorial).commit();
+
     }
 }

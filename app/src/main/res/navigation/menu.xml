@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu"
+    app:startDestination="@id/comienzo2">
+
+    <fragment
+        android:id="@+id/comienzo2"
+        android:name="com.jk.proyectofinal_idnp.comienzo"
+        android:label="fragment_comienzo"
+        tools:layout="@layout/fragment_comienzo" />
+    <fragment
+        android:id="@+id/trayectoria2"
+        android:name="com.jk.proyectofinal_idnp.trayectoria"
+        android:label="fragment_trayectoria"
+        tools:layout="@layout/fragment_trayectoria" />
+    <fragment
+        android:id="@+id/musica2"
+        android:name="com.jk.proyectofinal_idnp.musica"
+        android:label="fragment_musica"
+        tools:layout="@layout/fragment_musica" />
+    <fragment
+        android:id="@+id/mas2"
+        android:name="com.jk.proyectofinal_idnp.mas"
+        android:label="fragment_mas"
+        tools:layout="@layout/fragment_mas" />
+</navigation>

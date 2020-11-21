@@ -20,12 +20,14 @@ public class LoginActivity extends Activity implements LoginView, View.OnClickLi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        progressBar = (ProgressBar)findViewById(R.id.progressBar_login);
-        usuario = (EditText)findViewById(R.id.editText_login_usuario);
-        password = (EditText)findViewById(R.id.editText_login_password);
+       // progressBar = (ProgressBar)findViewById(R.id.progressBar_login);
+        usuario = (EditText)findViewById(R.id.inputUsername);
+        password = (EditText)findViewById(R.id.inputEmail);
 
         findViewById(R.id.button_login).setOnClickListener(this);
         presenter = new LoginPresenterImpl(this,new LoginInteractorImpl());
+
+
     }
 
     @Override
