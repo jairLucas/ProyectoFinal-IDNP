@@ -17,6 +17,7 @@
     <string name="comienzo_ranking_actual">Ranking Actual</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_trayectoria">Map</string>
 
     <!-- Historial -->
 
