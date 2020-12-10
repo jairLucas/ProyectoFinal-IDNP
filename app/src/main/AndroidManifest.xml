@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jk.proyectofinal_idnp">
-
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -19,7 +18,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoFinalIDNP">
-
+        <activity android:name=".PrueCloudActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -35,14 +39,10 @@
         <activity
             android:name=".View.TrayectoriaView.TrayectoriaActivity"
             android:label="@string/title_activity_trayectoria">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity android:name=".activity_bienvenida"></activity>
-        <activity android:name=".View.ComienzoView.ComienzoActivity"></activity>
-        <activity android:name=".View.LoginView.LoginActivity"></activity>
+        <activity android:name=".activity_bienvenida" />
+        <activity android:name=".View.ComienzoView.ComienzoActivity" />
+        <activity android:name=".View.LoginView.LoginActivity" />
         <activity android:name=".MainActivity" />
     </application>
 
