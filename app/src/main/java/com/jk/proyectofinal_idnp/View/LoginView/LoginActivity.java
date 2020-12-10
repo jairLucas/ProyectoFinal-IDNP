@@ -7,7 +7,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.jk.proyectofinal_idnp.Model.LoginModel.LoginInteractorImpl;
+import com.jk.proyectofinal_idnp.Model.Model.LoginInteractorImpl;
 import com.jk.proyectofinal_idnp.Presenter.LoginPresenter.LoginPresenter;
 import com.jk.proyectofinal_idnp.Presenter.LoginPresenter.LoginPresenterImpl;
 import com.jk.proyectofinal_idnp.R;
