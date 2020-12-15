@@ -23,5 +23,15 @@
 
     <!-- Historial -->
 
+    <!-- Bienvenida -->
+    <string name="bienvenida_button_comenzar">COMENZAR</string>
+    <string name="bienvenida_txtview_fitness">MY  FITNESS RUNNING</string>
+    <string name="bienvenida_txtview_bienvenido">BIENVENIDO</string>
+
+
+
+
+    <!-- Trayectoria -->
+    <string name="trayectoria_button_crear_nueva">Crear Nueva Trayectoria</string>
 
 </resources>
