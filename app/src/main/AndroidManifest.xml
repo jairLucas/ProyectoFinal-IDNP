@@ -18,9 +18,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoFinalIDNP">
-        <activity android:name=".PrueCloudActivity">
-
-        </activity>
+        <activity android:name=".View.TrayectoriaView.TrayectoriaActivity"></activity>
+        <activity android:name=".View.MusicaView.MusicaActivity" />
+        <activity android:name=".PrueCloudActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -34,22 +34,18 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".View.TrayectoriaView.TrayectoriaActivity"
-            android:label="@string/title_activity_trayectoria">
-        </activity>
-
-        <activity android:name=".activity_bienvenida"></activity>
+            android:name=".View.TrayectoriaView.TrayectoriaActivityExtra"
+            android:label="@string/title_activity_trayectoria" />
+        <activity android:name=".activity_bienvenida" />
         <activity android:name=".View.ComienzoView.ComienzoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".View.LoginView.LoginActivity">
-
-        </activity>
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".View.LoginView.LoginActivity" />
+        <activity android:name=".MainActivity" />
     </application>
+
 </manifest>

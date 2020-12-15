@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.TrayectoriaView.TrayectoriaActivity">
+    tools:context=".View.MusicaView.MusicaActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
                 android:layout_height="50dp"
                 android:fontFamily="sans-serif-black"
                 android:paddingLeft="10dp"
-                android:text="@string/title_trayectoria"
+                android:text="@string/title_musica"
                 android:textColor="@color/colorPrimary"
                 android:textSize="35sp"
                 android:textStyle="bold" />

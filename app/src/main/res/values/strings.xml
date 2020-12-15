@@ -6,6 +6,8 @@
 
     <!-- Titulos. -->
     <string name="title_comienzo">Comienzo</string>
+    <string name="title_musica">Música</string>
+    <string name="title_trayectoria">Trayectoria</string>
 
 
     <!-- Comienzo -->
