@@ -7,79 +7,79 @@
     tools:context=".View.ComienzoView.ComienzoActivity"
     >
 
-    <TextView
-        android:id="@+id/nombre_App"
-        android:layout_width="214dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="12dp"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/title_comienzo"
-        android:textColor="@color/colorPrimary"
-        android:textSize="35sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <FrameLayout
-        android:id="@+id/contenedor_fragment_comienzo_datos"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="222dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombre_App">
-
-    </FrameLayout>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="221dp"
-        android:layout_height="79dp"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/style_button_back"
-        android:text="@string/comienzo_button_iniciar_entrenamiento"
-        android:textColor="@drawable/style_button_txt_back"
-        android:textSize="15sp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/contenedor_fragment_comienzo_datos" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <FrameLayout
-        android:id="@+id/contenedor_fragment_comienzo_historial"
-        android:layout_width="414dp"
-        android:layout_height="141dp"
-        android:layout_marginTop="5dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    </FrameLayout>
+            <TextView
+                android:id="@+id/nombre_App"
+                android:layout_width="223dp"
+                android:layout_height="50dp"
+                android:fontFamily="sans-serif-black"
+                android:paddingLeft="10dp"
+                android:text="@string/title_comienzo"
+                android:textColor="@color/colorPrimary"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:id="@+id/contenedor_fragment_comienzo_datos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="221dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/style_button_back"
+                android:text="@string/comienzo_button_iniciar_entrenamiento"
+                android:textColor="@drawable/style_button_txt_back"
+                android:textSize="15sp" />
+
+            <FrameLayout
+                android:id="@+id/contenedor_fragment_comienzo_historial"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"></FrameLayout>
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/style_button_back"
+                android:text="@string/comienzo_ranking_actual"
+                android:textColor="@drawable/style_button_txt_back"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="65dp"
-        android:layout_marginBottom="3dp"
         android:background="#fff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/menu" />
 
-    <fragment
-        android:id="@+id/fragment2"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="441dp"
-        android:layout_height="673dp"
-        app:defaultNavHost="true"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:navGraph="@navigation/menu" />
 </androidx.constraintlayout.widget.ConstraintLayout>
