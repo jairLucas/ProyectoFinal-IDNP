@@ -11,4 +11,6 @@
     <color name="colorPrimaryDark">#330303</color>
     <color name="colorAccent">#330303</color>
     <color name="colorBackground">#FFFFFF</color>
+    <color name="pink">#FF5722</color>
+    <color name="orange">#FF5722</color>
 </resources>

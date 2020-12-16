@@ -6,6 +6,7 @@
 
     <!-- Titulos. -->
     <string name="title_comienzo">Comienzo</string>
+    <string name="title_entrenamiento">Entrenamiento</string>
 
 
     <!-- Comienzo -->
@@ -20,6 +21,20 @@
     <string name="title_activity_trayectoria">Map</string>
 
     <!-- Historial -->
+
+
+    <!-- Entrenamiento -->
+    <string name="comenzar_button">Comenzar</string>
+    <string name="deseo_entrenamiento">Deseo escuchar musica durante mi entrenamiento </string>
+    <string name="lista_emtrenamiento">Toda mi lista de reproduccion </string>
+    <string name="si_button">Si</string>
+    <string name="no_button">No</string>
+    <string name="escoger_button">Escoger musica Inicio</string>
+    <string name="config_entrenamiento">Configuracion Avanzada </string>
+    <string name="modo_entrenamiento">Escoger modo de entrenamiento </string>
+    <string name="permitir_entrenamiento">Permitir pausar </string>
+    <string name="bloquear_entrenamiento">Bloquear notificaciones </string>
+
 
 
 </resources>
