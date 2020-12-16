@@ -7,22 +7,22 @@
 
     <fragment
         android:id="@+id/comienzo2"
-        android:name="com.jk.proyectofinal_idnp.comienzo"
+        android:name="com.jk.proyectofinal_idnp.View.NavigationView.Fragments.comienzo"
         android:label="fragment_comienzo"
         tools:layout="@layout/fragment_comienzo" />
     <fragment
         android:id="@+id/trayectoria2"
-        android:name="com.jk.proyectofinal_idnp.trayectoria"
+        android:name="com.jk.proyectofinal_idnp.View.NavigationView.Fragments.trayectoria"
         android:label="fragment_trayectoria"
         tools:layout="@layout/fragment_trayectoria" />
     <fragment
         android:id="@+id/musica2"
-        android:name="com.jk.proyectofinal_idnp.musica"
+        android:name="com.jk.proyectofinal_idnp.View.NavigationView.Fragments.musica"
         android:label="fragment_musica"
         tools:layout="@layout/fragment_musica" />
     <fragment
         android:id="@+id/mas2"
-        android:name="com.jk.proyectofinal_idnp.mas"
+        android:name="com.jk.proyectofinal_idnp.View.NavigationView.Fragments.mas"
         android:label="fragment_mas"
         tools:layout="@layout/fragment_mas" />
 </navigation>

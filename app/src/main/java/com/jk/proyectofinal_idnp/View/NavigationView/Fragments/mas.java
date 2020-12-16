@@ -1,4 +1,4 @@
-package com.jk.proyectofinal_idnp;
+package com.jk.proyectofinal_idnp.View.NavigationView.Fragments;
 
 import android.os.Bundle;
 
@@ -8,12 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.jk.proyectofinal_idnp.R;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link musica#newInstance} factory method to
+ * Use the {@link mas#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class musica extends Fragment {
+public class mas extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +26,7 @@ public class musica extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public musica() {
+    public mas() {
         // Required empty public constructor
     }
 
@@ -34,11 +36,11 @@ public class musica extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment musica.
+     * @return A new instance of fragment mas.
      */
     // TODO: Rename and change types and number of parameters
-    public static musica newInstance(String param1, String param2) {
-        musica fragment = new musica();
+    public static mas newInstance(String param1, String param2) {
+        mas fragment = new mas();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +61,6 @@ public class musica extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_musica, container, false);
+        return inflater.inflate(R.layout.fragment_mas, container, false);
     }
 }

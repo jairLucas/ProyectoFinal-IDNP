@@ -1,19 +1,26 @@
-package com.jk.proyectofinal_idnp;
+package com.jk.proyectofinal_idnp.View.NavigationView.Fragments;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.fragment.app.Fragment;
+
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.jk.proyectofinal_idnp.R;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link mas#newInstance} factory method to
+ * Use the {@link trayectoria#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class mas extends Fragment {
+public class trayectoria extends Fragment {
+
+
+
+    private FusedLocationProviderClient mFusedLocationClient;
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +31,7 @@ public class mas extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public mas() {
+    public trayectoria() {
         // Required empty public constructor
     }
 
@@ -34,11 +41,11 @@ public class mas extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment mas.
+     * @return A new instance of fragment trayectoria.
      */
     // TODO: Rename and change types and number of parameters
-    public static mas newInstance(String param1, String param2) {
-        mas fragment = new mas();
+    public static trayectoria newInstance(String param1, String param2) {
+        trayectoria fragment = new trayectoria();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -49,6 +56,8 @@ public class mas extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
@@ -59,6 +68,6 @@ public class mas extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_mas, container, false);
+        return inflater.inflate(R.layout.fragment_trayectoria, container, false);
     }
 }

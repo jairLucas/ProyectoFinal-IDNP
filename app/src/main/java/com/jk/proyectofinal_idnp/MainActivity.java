@@ -58,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 if(item.getItemId()==R.id.comienzo){
                     return true;
-
                 }
                 if(item.getItemId()==R.id.trayectoria){
                     return true;
