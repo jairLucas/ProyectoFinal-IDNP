@@ -31,6 +31,7 @@
         android:layout_marginBottom="40dp"
         android:ellipsize="none"
         android:text="@string/bienvenida_txtview_fitness"
+        android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="35sp"
         app:autoSizeTextType="uniform"

@@ -1,4 +1,4 @@
-package com.jk.proyectofinal_idnp.Model.Model;
+package com.jk.proyectofinal_idnp.Model.Model.LoginModel;
 
 public interface LoginInteractor {
     /*escuchar al activity*/

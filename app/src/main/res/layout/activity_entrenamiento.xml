@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.ComienzoView.ComienzoActivity"
-    >
+    tools:context=".View.EntrenamientoView.EntrenamientoActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -21,54 +20,44 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/nombre_App"
-                android:layout_width="223dp"
-                android:layout_height="50dp"
+                android:id="@+id/nombre_App_entrenamiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-black"
                 android:paddingLeft="10dp"
-                android:text="@string/title_comienzo"
+                android:text="@string/title_entrenamiento"
                 android:textColor="@color/colorPrimary"
                 android:textSize="35sp"
                 android:textStyle="bold" />
 
-            <FrameLayout
-                android:id="@+id/contenedor_fragment_comienzo_datos"
+
+            <Spinner
+                android:id="@+id/spinner_trayectorias"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-            </FrameLayout>
-
-            <Button
-                android:id="@+id/button"
-                android:layout_width="221dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:onClick="A_entrenamiento"
+                android:layout_margin="30dp"/>
+
+            <FrameLayout
+                android:id="@+id/contenedor_fragment_entrenamiento_maps"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"></FrameLayout>
+
+            <Button
+                android:id="@+id/button_entrenamiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
                 android:background="@drawable/style_button_back"
-                android:text="@string/comienzo_button_iniciar_entrenamiento"
+                android:text="@string/entrenamiento_button_siguiente"
                 android:textColor="@drawable/style_button_txt_back"
                 android:textSize="15sp" />
-
-            <FrameLayout
-                android:id="@+id/contenedor_fragment_comienzo_historial"
-                android:layout_width="wrap_content"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:paddingLeft="10dp"></FrameLayout>
-
-            <Button
-                android:id="@+id/button1"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/style_button_back"
-                android:text="@string/comienzo_ranking_actual"
-                android:textColor="@drawable/style_button_txt_back"
-                android:textSize="12sp" />
 
         </LinearLayout>
     </ScrollView>

@@ -1,6 +1,8 @@
-package com.jk.proyectofinal_idnp.Model.Model;
+package com.jk.proyectofinal_idnp.Model.Model.LoginModel;
 
 import android.text.TextUtils;
+
+import com.jk.proyectofinal_idnp.Model.Model.LoginModel.LoginInteractor;
 
 import java.util.logging.Handler;
 import java.util.logging.LogRecord;

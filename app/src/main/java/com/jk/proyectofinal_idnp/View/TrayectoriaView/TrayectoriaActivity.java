@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.jk.proyectofinal_idnp.R;
@@ -22,6 +23,7 @@ public class TrayectoriaActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
     FragmentTransaction transaccion;
     Fragment Fmaps,Ftrayectorias;
+    TextView title;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,12 +33,13 @@ public class TrayectoriaActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().add(R.id.contenedor_fragment_trayectoria_maps,Fmaps).commit();
         Ftrayectorias = new ComienzoHistorialFragment();
         getSupportFragmentManager().beginTransaction().add(R.id.contenedor_fragment_trayectorias,Ftrayectorias).commit();
+        //titulo del recyclerview de trayectorias
         inicializarBottomNavigationView();
+
     }
     private void inicializarBottomNavigationView(){
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         bottomNavigationView.setSelectedItemId(R.id.trayectoria);
-
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener(){
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -50,6 +53,7 @@ public class TrayectoriaActivity extends AppCompatActivity {
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.trayectoria:
+
                         return true;
                 }
                 return false;
