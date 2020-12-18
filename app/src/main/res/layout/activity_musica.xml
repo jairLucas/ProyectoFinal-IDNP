@@ -34,7 +34,7 @@
                 android:id="@+id/imageView"
                 android:layout_width="330dp"
                 android:layout_height="330dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="30dp"
                 android:src="@drawable/ic_album"
                 android:layout_gravity="center"/>
 
@@ -58,33 +58,33 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="116dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
                 android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
 
                 <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="40dp"
                     android:id="@+id/prev"
-                    android:src="@drawable/previous_btn"/>
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/previous_btn" />
 
 
                 <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="40dp"
                     android:id="@+id/play"
-                    android:src="@drawable/play_btn"/>
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/play_btn" />
 
 
                 <ImageView
+                    android:id="@+id/next"
                     android:layout_width="60dp"
                     android:layout_height="40dp"
-                    android:id="@+id/next"
-                    android:src="@drawable/next_btn"/>
+                    android:src="@drawable/next_btn" />
 
             </LinearLayout>
 

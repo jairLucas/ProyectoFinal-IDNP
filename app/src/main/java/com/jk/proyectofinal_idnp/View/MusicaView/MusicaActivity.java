@@ -238,24 +238,24 @@ public class MusicaActivity extends AppCompatActivity {
 
     private void songNames() {
         if (currentIndex == 0) {
-            songTitle.setText("Goblin - Korean Song");
-            imageView.setImageResource(R.drawable.ic_album);
+            songTitle.setText("music 1");
+            imageView.setImageResource(R.drawable.img);
         }
         if (currentIndex == 1) {
-            songTitle.setText("Dil Dhadkanee Do");
-            imageView.setImageResource(R.drawable.ic_album);
+            songTitle.setText("music 2");
+            imageView.setImageResource(R.drawable.img);
         }
         if (currentIndex == 2) {
-            songTitle.setText("Iktara - Amit Trivedi");
-            imageView.setImageResource(R.drawable.ic_album);
+            songTitle.setText("music 3");
+            imageView.setImageResource(R.drawable.img);
         }
         if (currentIndex == 3) {
-            songTitle.setText("Start Over - Korean Song");
-            imageView.setImageResource(R.drawable.ic_album);
+            songTitle.setText("music 4");
+            imageView.setImageResource(R.drawable.img);
         }
         if (currentIndex == 4) {
-            songTitle.setText("Tujhe Kitna");
-            imageView.setImageResource(R.drawable.ic_album);
+            songTitle.setText("music 5");
+            imageView.setImageResource(R.drawable.img);
         }
     }
 
