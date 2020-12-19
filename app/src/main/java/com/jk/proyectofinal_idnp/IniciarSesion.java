@@ -25,7 +25,7 @@ public class IniciarSesion extends AppCompatActivity {
     }
 
     public void iniciar(View view){
-        /*
+        
         String u=user.getText().toString();
         String p=pass.getText().toString();
         if(u.equals("")&&p.equals("")){
@@ -40,10 +40,8 @@ public class IniciarSesion extends AppCompatActivity {
         }else{
             Toast.makeText(this, "Usuario y/o password incorrectos", Toast.LENGTH_SHORT).show();
         }
-        */
-        Toast.makeText(this, "Datos correctos", Toast.LENGTH_SHORT).show();
-        Intent i2= new Intent (this, ComienzoActivity.class);
-        startActivity(i2);
+
+
 
     }
 
