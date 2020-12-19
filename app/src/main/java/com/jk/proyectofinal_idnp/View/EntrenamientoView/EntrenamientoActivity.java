@@ -17,6 +17,7 @@ import com.jk.proyectofinal_idnp.R;
 import com.jk.proyectofinal_idnp.View.ComienzoView.ComienzoActivity;
 import com.jk.proyectofinal_idnp.View.MusicaView.MusicaActivity;
 import com.jk.proyectofinal_idnp.View.TrayectoriaView.Fragments.MapsFragment;
+import com.jk.proyectofinal_idnp.View.TrayectoriaView.TrayectoriaActivity;
 
 public class EntrenamientoActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
@@ -32,19 +33,15 @@ public class EntrenamientoActivity extends AppCompatActivity {
         opciones = (Spinner)findViewById(R.id.spinner_trayectorias);
         ArrayAdapter<CharSequence> adapter  = ArrayAdapter.createFromResource(this,R.array.opciones, android.R.layout.simple_spinner_item);
         opciones.setAdapter(adapter);
-        //inicializarBottomNavigationView();
+        inicializarBottomNavigationView();
     }
-
     public void A_configuracion(View view){
         Intent intent_entrenamiento = new Intent(this, EntrenamientoActivity.class);
         startActivity(intent_entrenamiento);
     }
-
-
-/*
     private void inicializarBottomNavigationView(){
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
-        /*bottomNavigationView.setSelectedItemId(R.id.trayectoria);
+        //bottomNavigationView.setSelectedItemId(R.id.trayectoria);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener(){
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -58,7 +55,7 @@ public class EntrenamientoActivity extends AppCompatActivity {
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.trayectoria:
-                        startActivity(new Intent(getApplicationContext(), MusicaActivity.class));
+                        startActivity(new Intent(getApplicationContext(), TrayectoriaActivity.class));
                         overridePendingTransition(0,0);
                         return true;
                 }
@@ -66,5 +63,5 @@ public class EntrenamientoActivity extends AppCompatActivity {
             }
         });
     }
-    */
+
 }
