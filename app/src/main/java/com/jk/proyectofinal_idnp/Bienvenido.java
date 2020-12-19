@@ -13,7 +13,7 @@ Button siguiente;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+//dsdsd
         siguiente = (Button) findViewById(R.id.button2);
         siguiente.setOnClickListener(new View.OnClickListener() {
             @Override
