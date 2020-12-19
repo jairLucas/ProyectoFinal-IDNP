@@ -1,69 +1,61 @@
 package com.jk.proyectofinal_idnp.View.LoginView;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.jk.proyectofinal_idnp.Main;
 import com.jk.proyectofinal_idnp.Model.Model.LoginModel.LoginInteractorImpl;
 import com.jk.proyectofinal_idnp.Presenter.LoginPresenter.LoginPresenter;
 import com.jk.proyectofinal_idnp.Presenter.LoginPresenter.LoginPresenterImpl;
 import com.jk.proyectofinal_idnp.R;
+import com.jk.proyectofinal_idnp.Registrar;
+import com.jk.proyectofinal_idnp.Usuario;
+import com.jk.proyectofinal_idnp.View.ComienzoView.ComienzoActivity;
+import com.jk.proyectofinal_idnp.daoUsuario;
 
 public class LoginActivity extends Activity implements LoginView, View.OnClickListener {
-    private ProgressBar progressBar;
-    private EditText usuario, password;
-    private LoginPresenter presenter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-       // progressBar = (ProgressBar)findViewById(R.id.progressBar_login);
-        usuario = (EditText)findViewById(R.id.inputUsername);
-        password = (EditText)findViewById(R.id.inputEmail);
-
-        findViewById(R.id.button_login).setOnClickListener(this);
-        presenter = new LoginPresenterImpl(this,new LoginInteractorImpl());
-
+        setContentView(R.layout.activity_main);
 
     }
 
-    @Override
-    protected void onDestroy() {
-        presenter.onDestroy();
-        super.onDestroy();
-    }
-
-    @Override
-    public void onClick(View v) {
-        presenter.validateCredentials(usuario.getText().toString(),password.getText().toString());
-    }
 
     @Override
     public void showProgress() {
-        progressBar.setVisibility(View.VISIBLE);
+
     }
 
     @Override
     public void hideProgress() {
-        progressBar.setVisibility(View.GONE);
+
     }
 
     @Override
     public void setUsernameError() {
-        usuario.setText("Error de usuario");
+
     }
+
     @Override
-    public void setPasswordError(){
-        password.setError("Error de password");
+    public void setPasswordError() {
+
     }
-
-
 
     @Override
     public void navigateToHome() {
-        Toast.makeText(this, "Ingresó", Toast.LENGTH_SHORT).show();
+
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 }

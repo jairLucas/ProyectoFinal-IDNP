@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.jk.proyectofinal_idnp.View.ComienzoView.ComienzoActivity;
 
-public class Main extends AppCompatActivity implements View.OnClickListener {
+public abstract class Main extends AppCompatActivity implements View.OnClickListener {
     EditText user, pass;
     Button btnEntrar, btnRegistrar;
     daoUsuario dao;
@@ -30,9 +30,8 @@ public class Main extends AppCompatActivity implements View.OnClickListener {
         btnRegistrar.setOnClickListener(this);
         dao= new daoUsuario(this);
     }
-
-
-    public void onClick(View v){
+/*
+    public void onClickCR(View v){
         switch (v.getId()){
             case R.id.button_login:
                 String u=user.getText().toString();
@@ -58,7 +57,29 @@ public class Main extends AppCompatActivity implements View.OnClickListener {
         }
 
 
+    }*/
+    /*
+    public void iniciar(View view){
+        String u=user.getText().toString();
+        String p=pass.getText().toString();
+        if(u.equals("")&&p.equals("")){
+            Toast.makeText(this, "Error: Campos vacios", Toast.LENGTH_SHORT).show();
+        }else if(dao.login(u,p)==1){
+            Usuario ux= dao.getUsuario(u,p);
+            Toast.makeText(this, "Datos correctos", Toast.LENGTH_SHORT).show();
+            Intent i2= new Intent (Main.this, ComienzoActivity.class);
+            i2.putExtra("id", ux.getId());
+            startActivity(i2);
+            finish();
+        }else{
+            Toast.makeText(this, "Usuario y/o password incorrectos", Toast.LENGTH_SHORT).show();
+        }
     }
 
+    public void registrar(View view){
+        Intent i=new Intent(Main.this, Registrar.class);
+        startActivity(i);
+    }
 
+*/
 }

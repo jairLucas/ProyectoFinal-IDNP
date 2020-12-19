@@ -7,7 +7,14 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.jk.proyectofinal_idnp.View.LoginView.LoginActivity;
+
 public class Bienvenido extends AppCompatActivity {
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+    /*
 Button siguiente;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,4 +30,10 @@ Button siguiente;
             }
         });
     }
+*/
+    /*
+    public void toLogin(View v){
+        Intent intent_login = new Intent(this, LoginActivity.class);
+        startActivityForResult(intent_login,0);
+    }*/
 }

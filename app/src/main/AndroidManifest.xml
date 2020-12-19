@@ -18,7 +18,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoFinalIDNP">
-        <activity android:name=".View.EntrenamientoView.EntrenamientoActivity"></activity>
+        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".IniciarSesion" />
+        <activity android:name=".View.EntrenamientoView.EntrenamientoActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -38,14 +40,17 @@
             android:name=".View.TrayectoriaView.TrayectoriaActivityExtra"
             android:label="@string/title_activity_trayectoria" />
         <activity android:name=".View.ComienzoView.ComienzoActivity" />
-
         <activity android:name=".activity_bienvenida">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".View.LoginView.LoginActivity" />
+
+        <activity android:name=".View.LoginView.LoginActivity">
+
+        </activity>
         <activity android:name=".MainActivity" />
     </application>
 

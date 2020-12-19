@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/rosa"
-    tools:context=".View.LoginView.LoginActivity">
+    android:background="@color/pink"
+    tools:context=".IniciarSesion">
 
     <TextView
         android:id="@+id/txtview_title_recyclerview"
@@ -82,10 +82,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:background="@drawable/btnbg"
+        android:background="@drawable/style_button_back"
+        android:textColor="@drawable/style_button_txt_back"
         android:onClick="iniciar"
         android:text="Iniciar"
-        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/inputEmail"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/inputEmail"
@@ -96,10 +96,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
-        android:background="@drawable/btnbg"
+        android:background="@drawable/style_button_back"
+        android:textColor="@drawable/style_button_txt_back"
         android:onClick="registrar"
         android:text="Registro"
-        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/inputEmail"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/inputEmail"
@@ -126,10 +126,10 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="476dp"
         android:layout_marginEnd="8dp"
-        android:background="@drawable/inputbg"
+        android:background="@drawable/style_button_back"
+        android:textColor="@drawable/style_button_txt_back"
         android:drawableLeft="@drawable/google"
         android:text="Gmail"
-        android:textColor="@color/black"
         app:layout_constraintEnd_toStartOf="@+id/btnFacebook"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -142,10 +142,12 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:background="@drawable/btnbg"
+
+        android:background="@drawable/style_button_back"
+        android:textColor="@drawable/style_button_txt_back"
         android:drawableLeft="@drawable/facebook_box"
         android:text="Facebook"
-        android:textColor="@color/black"
+
         app:layout_constraintBottom_toBottomOf="@+id/btnGmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -168,6 +170,5 @@
         android:textColor="@color/white"
         tools:layout_editor_absoluteX="49dp"
         tools:layout_editor_absoluteY="587dp" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -66,8 +66,8 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/style_button_back"
-                android:text="@string/comienzo_ranking_actual"
                 android:textColor="@drawable/style_button_txt_back"
+                android:text="@string/comienzo_ranking_actual"
                 android:textSize="12sp" />
 
         </LinearLayout>

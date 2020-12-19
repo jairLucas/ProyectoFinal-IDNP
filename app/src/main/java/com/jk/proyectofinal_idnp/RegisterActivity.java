@@ -1,6 +1,5 @@
 package com.jk.proyectofinal_idnp;
 
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -8,10 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
-public class Registrar extends AppCompatActivity implements View.OnClickListener {
+public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
+
     EditText us, ap, nom,pas;
     Button reg, can;
     daoUsuario dao;
@@ -28,7 +27,7 @@ public class Registrar extends AppCompatActivity implements View.OnClickListener
         can=(Button)findViewById(R.id.btnCancelarR);
         dao=new daoUsuario(this);
 
-        reg.setOnClickListener(this);
+        reg.setOnClickListener((View.OnClickListener) this);
         can.setOnClickListener(this);
     }
 
@@ -45,7 +44,7 @@ public class Registrar extends AppCompatActivity implements View.OnClickListener
                     Toast.makeText(this,"ERROR  campos vacios",Toast.LENGTH_LONG).show();
                 }else if(dao.insertUsuario(u)){
                     Toast.makeText(this,"¡Registro Exitoso!",Toast.LENGTH_LONG).show();
-                    Intent i2 = new Intent(Registrar.this,Main.class);
+                    Intent i2 = new Intent(this,IniciarSesion.class);
                     startActivity(i2);
                     finish();
                 }else{
@@ -54,9 +53,14 @@ public class Registrar extends AppCompatActivity implements View.OnClickListener
                 break;
 
             case R.id.btnCancelarR:
-                Intent i = new Intent(Registrar.this,Main.class);
+                Intent i = new Intent(this,IniciarSesion.class);
                 startActivity(i);
                 finish();
         }
+    }
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+
     }
 }
