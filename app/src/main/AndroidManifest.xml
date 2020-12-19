@@ -37,8 +37,9 @@
         <activity
             android:name=".View.TrayectoriaView.TrayectoriaActivityExtra"
             android:label="@string/title_activity_trayectoria" />
-        <activity android:name=".activity_bienvenida" />
-        <activity android:name=".View.ComienzoView.ComienzoActivity">
+        <activity android:name=".View.ComienzoView.ComienzoActivity" />
+
+        <activity android:name=".activity_bienvenida">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
